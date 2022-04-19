@@ -5,7 +5,7 @@ export default function Text(props) {
 
   
  
-  const [Text, setText] = useState('Enter Text    Here');
+  const [Text, setText] = useState('Enter Text Here');
   const HandleOnChange = (textarea)=>{
     // console.log("change")
     setText(textarea.target.value)
@@ -36,7 +36,11 @@ export default function Text(props) {
   </div>
   <div className="container">
     <h1>Your Text Summary</h1>
-    <p>{Text.split}</p>
+    <p>
+     {Text.split(" ").length} Words And Charcters{Text.length} </p>
+     <p>{0.008 * Text.split(" ").length}Reading Time</p>
+
+    
   </div>
   </>
   )
