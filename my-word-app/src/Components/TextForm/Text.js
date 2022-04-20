@@ -22,9 +22,15 @@ export default function Text(props) {
     setText(newText);
   }
   const HandleClear = ()=>{
-    // console.log("low")
     let newText = "";
     setText(newText);
+  }
+
+  const HandleCopy = () => {
+    console.log("copy")
+    var Text = document.getElementById("mybox");
+    Text.select();
+    navigator.clipboard.writeText(Text.value);
   }
 
 
@@ -33,11 +39,12 @@ export default function Text(props) {
   <div>
     <h1>{props.heading}</h1>
     <div className="mb-3 my-3" >
-    <textarea className="form-control" id="exampleFormControlTextarea1" onChange={HandleOnChange}  value={Text} itemID="mybox" rows="14"></textarea>
+    <textarea className="form-control" id="exampleFormControlTextarea1" onChange={HandleOnChange}  value={Text} itemID="mybox" rows="8"></textarea>
     </div>
       <button className="btn btn-primary m-2" onClick={HandleUp}>Change To Upper</button>
       <button className="btn btn-primary m-2"onClick={HandleLow}>Change To Lower</button>
       <button className="btn btn-primary m-2"onClick={HandleClear}>Clear Text</button>
+      <button className="btn btn-primary m-2"onClick={HandleCopy}>Copy Text</button>
       
 
   </div>
@@ -46,6 +53,9 @@ export default function Text(props) {
     <p>
      {Text.split(" ").length} Words And Charcters{Text.length} </p>
      <p>{0.008 * Text.split(" ").length}Reading Time</p>
+
+     <h2>My Paragraph</h2>
+     <p>{Text}</p>
 
     
   </div>
