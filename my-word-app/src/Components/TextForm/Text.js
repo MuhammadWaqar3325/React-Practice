@@ -21,6 +21,11 @@ export default function Text(props) {
     let newText = Text.toLowerCase();
     setText(newText);
   }
+  const HandleClear = ()=>{
+    // console.log("low")
+    let newText = "";
+    setText(newText);
+  }
 
 
   return (
@@ -32,6 +37,8 @@ export default function Text(props) {
     </div>
       <button className="btn btn-primary m-2" onClick={HandleUp}>Change To Upper</button>
       <button className="btn btn-primary m-2"onClick={HandleLow}>Change To Lower</button>
+      <button className="btn btn-primary m-2"onClick={HandleClear}>Clear Text</button>
+      
 
   </div>
   <div className="container">
