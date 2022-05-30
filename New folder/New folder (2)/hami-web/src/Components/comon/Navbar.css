@@ -1,0 +1,83 @@
+@media only screen and (max-width:400px){
+    
+    .ham{
+      font-size: 20px !important;
+         
+                     }
+  }
+  
+  @media only screen and (max-width:350px){
+  
+      .ham{
+        font-size: 18px !important;
+           
+                       }
+    }
+    @media only screen and (max-width:330px){
+  
+      .ham{
+        font-size: 16px !important;
+           
+                       }
+    }
+    @media only screen and (max-width:291px){
+  
+      .ham{
+        font-size: 14px !important;
+           
+                       }
+    }@media only screen and (max-width:265px){
+  
+      .ham{
+        font-size: 12px !important;
+           
+                       }
+    }
+    @media only screen and (max-width:230px){
+  
+      .ham{
+        font-size: 11px !important;
+           
+                       }
+    }
+    @media only screen and (max-width:225px){
+  
+      .ham{
+        font-size: 9px;
+        font-family: 'Piedra', cursive;
+        /* font-family: 'Metal Mania', cursive; */
+        /* font-family: 'Josefin Sans', sans-serif; */
+        /* font-family: Verdana, Tahoma, sans-serif; */
+        text-align: center
+        !important;
+           
+      }
+    }
+
+
+
+
+
+
+/* 
+    .navbar-nav a:hover::after {
+      width: 100%;
+  }
+  .navbar-nav a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: rgb(167, 255, 3);
+      display: block;
+      margin: auto;
+      transition: .9s;
+  } */
+
+
+
+
+  /* text-shadow: 2px 4px 5px #b938fa;} */
+
+
+
+
