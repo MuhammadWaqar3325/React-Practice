@@ -1,0 +1,11 @@
+.main{
+    text-align: center;
+    display:block;
+    align-items: center;
+    height: 400px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
